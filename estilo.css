@@ -1,0 +1,103 @@
+header {
+    height: 10%;
+    
+}
+
+.txt[contenteditable] {
+    outline: none;
+  }
+  
+  /* Box ------------------------------------------------------ */
+  
+  #box {
+    padding: 15px;
+    font-size: 5em;
+    font-weight: bold;
+  }
+  
+  
+  /* txt ------------------------------------------------------ */
+  
+  .txt {
+    color: hsla(0,0%,0%,0);
+    text-shadow: rgb(12, 11, 11) 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+      }
+      @-moz-document url-prefix() { .txt { text-shadow: rgb(22, 21, 21) 0 0 20px; } } /* FF fix */
+  
+  #box:hover .txt {
+          text-shadow: rgb(17, 17, 17) 0 0 5px;
+          transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+  }
+  
+  
+  /* ♥ ------------------------------------------------------ */
+  
+  .♥ {
+    margin: 0 10px;
+    color: hsla(0,0%,0%,0);
+    text-shadow: red 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+      }
+  
+  #box:hover .♥ {
+          text-shadow: red 0 0 100px;
+          transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+  }
+    @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+
+
+nav {
+    height: 9%;
+    background-color: #BC80FF;
+}
+
+#principal {
+    display: flex;
+    align-items: stretch;
+}
+
+article {
+    width: 80%;
+    background-color:#BBFFC9;
+    min-height: 80%;
+
+    
+}
+.tipo_letra{
+  font-family: "Homer Simpson", cursive;
+  color: rgb(226, 43, 43);
+}
+
+aside {
+    width: 25%;
+    background-color: #a7d2e4;
+    min-height: 80%;
+}
+
+.text_subtitulo {
+  font-family: "Homer Simpson", cursive;
+  font-size:larger;
+  
+  
+}
+
+
+
+footer{
+  background-color: #191e20;
+  height: 5%;
+}
+
+html { height: 100%; }
+body {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+ 
+	}
+
+  

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title> Veterinaria</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id="box" align="center">
+                <span class="txt">I</span>
+                <span class="♥">♥</span>
+                <span class="txt" contenteditable="" spellcheck="false">PETS!!</span>
+                </div><div id="box">
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="cachorros.jpg" height="200px" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="gato.jpg" height="200px" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="perros2.jpg" height="200px" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="perros.jpg" height="200px" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="ultimosperros.jpg" height="200px"  alt="Five slide">
+                </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">I ♥  PETS!!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Solicitar Cita</a>
+                  <a class="dropdown-item" href="#">Cirugías</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Medicina General</a>
+                </div>
+              </li>
+            </div>
+            
+        </div>
+        </nav>
+    <div id="principal">
+            
+        <article>
+            
+            <form action="procesar.html">
+                <h2 align="center"><font face="Comic sans ms">Solicitar una Cita</font></h2>
+                <p class="tipo_letra">DATOS DE CONTACTO</p>
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Nombres y Apellidos">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="tel" min="0" max="9" class="form-control" placeholder="Telefono">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                </div>
+                <br>
+                <p class="tipo_letra">DATOS DE LA MASCOTA</p>
+                <div class="form-row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Tipo de Mascota">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" min="0" max="9" class="form-control" placeholder="Raza">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="date" class="form-control" placeholder="Fecha de Nacimiento">
+                        </div>
+                 </div>
+                 <br>
+                 <div class="form-row">
+                        <div class="form-group col-md-4">
+                                <label for="inputState">Sexo</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Opcion...</option>
+                                  <option>Hembra</option>
+                                  <option>Macho</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                                <label for="inputState">¿Qué alimento usa?</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Opcion...</option>
+                                  <option>Comida Humeda</option>
+                                  <option>Comida Seca</option>
+                                </select>
+                        </div>
+                 </div>
+                 <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">¿Convive con otros Animales? </legend>
+                        
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="convivir" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                             Si
+                            </label>
+                            <br>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="convivir" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                             No
+                            </label>
+                        </div>            
+                 </div>
+                 <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">¿Esta Correctamente Vacunado?</legend>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vacuna" id="gridRadios3" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                             Si
+                            </label>
+                            <br>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vacuna" id="gridRadios4" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                             No
+                            </label>
+                          </div>              
+                 </div>
+                 <br>
+                 <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Sintomas que Presenta</label>
+                        <textarea name="nombre" rows="4" cols="40" maxlenght="100">Escribe aquí tu comentario
+                            </textarea>
+                </div>
+                <div align = "center">
+                    <button type="button" class="btn btn-primary btn-lg" align="center">ENVIAR</button>
+                </div>
+                <br>
+               
+             </form>
+            </article>
+            <aside>
+                <p class="text_subtitulo" > 
+                    Formulario de Solicitud
+                </p>
+                <p> Por favor completar el formulario para solicitar una cita para el servicio deseado. Le estaremos confirmando lo más pronto posible.
+                <br><br>En nuestra consulta, la medicina veterinaria y nuestra pasión por los animales van de la mano. Atendemos a mascotas de todo tipo, desde hamster hasta schnauzer gigantes. 
+                    No se preocupe: todos ellos están en buenas manos. 
+                    Visite las páginas siguientes para conocer a nuestro equipo y ver nuestros métodos de tratamiento.
+                
+            </aside> 
+        </div>
+        
+        <footer>
+            <label style="color:rgb(241, 220, 220)"><strong> <i>Telefono: 3186982938</i></strong> </label>
+            <label style="color:rgb(241, 220, 220)"><strong> <i>Direccion: M a Casa 20</i></strong> </label>
+            <label style="color:rgb(241, 220, 220)"><strong> <i>I ♥ PETSS!!</i></strong> </label>
+        </footer>
+    
+
+
+</body></html>
